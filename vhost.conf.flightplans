@@ -1,0 +1,29 @@
+<VirtualHost *:80>
+ServerName flightplans
+DocumentRoot "/home/websites/Aerotour/FlightPlans"
+
+LogFormat "%h %l %u %t \"%r\" %s %b %v \"%{Referer}i\" \"%{User-Agent}i\"" wusage
+ErrorLog  /home/websites/logs/flightplans.apache.log
+CustomLog /home/websites/logs/flightplans.access_log wusage
+
+# Other PHP Directives
+
+# Display all except notices
+php_flag  log_errors on
+php_flag display_errors  Off
+php_value error_reporting 1
+php_value error_log /home/websites/logs/flightplans.php.log
+
+<Directory "/home/websites/Aerotour/FlightPlans/">
+ allow from all
+ Options +Indexes
+ RewriteEngine on
+ RewriteBase /
+ RewriteCond %{REQUEST_FILENAME} !-f
+ RewriteCond %{REQUEST_FILENAME} !-d
+ RewriteRule ^(.*)$ index.php?q=$1 [L,QSA]
+ AllowOverride All
+</Directory>
+
+</VirtualHost>
+

@@ -1,0 +1,72 @@
+{
+      "type": "Helicopter",
+      "zone": "Pacific North",
+      "flight": "MRPV-MRLB",
+		"route": [
+		{	
+		  "point":"MRPV",
+		  "airport":"yes",
+        "cordinates":"new GLatLng(9.958029,-84.139670)",
+		  "altitude":"3600",
+		  "markerImage":"../images/maps/aa-start.png",
+		  "frequency": "118.3",
+		  "tower": "118.3",
+		  "twrground": "121.7",
+		  "runway": "09/27",
+		  "length": "1600",
+		  "ground": "asphalt"
+		},
+		{	
+		  "point":"PEDRE",
+        "cordinates":"new GLatLng(9.975018,-84.182672)",
+		  "altitude":"3500",
+		  "markerImage":"../images/maps/aa-marker.png",
+		  "frequency": "118.6"
+		},
+		{	
+		  "point":"BALSA",
+        "cordinates":"new GLatLng(9.931294,-84.361263)",
+		  "altitude":"2500",
+		  "markerImage":"../images/maps/aa-marker.png",
+		  "frequency": "126.8"
+		},
+		{	
+		  "point":"OROTINA",
+        "cordinates":"new GLatLng(9.911895,-84.519587)",
+		  "altitude":"1500",
+		  "markerImage":"../images/maps/aa-marker.png",
+		  "frequency": "123.0"
+		},
+		{	
+		  "point":"MRCH",
+		  "airport":"yes",
+        "cordinates":"new GLatLng(9.981752,-84.773482)",
+		  "altitude":"1500",
+		  "markerImage":"../images/maps/aa-check.png",
+		  "frequency": "126.8",
+		  "runway": "09/27",
+		  "length": "1518",
+		  "ground": "asphalt"
+		},
+		{	
+		  "point":"RIO TEMPISKE",
+        "cordinates":"new GLatLng(10.246187,-85.244108)",
+		  "altitude":"1500",
+		  "markerImage":"../images/maps/aa-marker.png",
+		  "frequency": "126.8"
+		},
+		{	
+		  "point":"MRLB",
+		  "airport":"yes",
+        "cordinates":"new GLatLng(10.593598,-85.543210)",
+		  "markerImage":"../images/maps/aa-end.png",
+		  "frequency": "118.6",
+		  "approach": "126.5",
+		  "tower": "118.6",
+		  "runway": "07/25",
+		  "length": "2750",
+		  "ground": "asphalt"
+		}
+		],
+      "approved": true
+ }

@@ -1,0 +1,151 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Flights display
+ */
+th {
+	padding: 2px;
+	/*background-color: #040f1a;*/
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#b0bccd), color-stop(0.5, #889bb3), color-stop(0.5, #8195af), to(#6d84a2));
+	color: #040f1a;
+	font: 9pt "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+
+
+.linux.gecko th {
+	background:url('../images/tabbar.png') repeat-x 0 0;
+	color: #fff;
+}
+.win.gecko th {
+	background:url('../images/tabbar.png') repeat-x 0 0;
+	color: #fff;
+}
+.win.ie th {
+	background:url('../images/tabbar.png') repeat-x 0 0;
+	color: #fff;
+}
+
+td {
+	text-align: center;
+	font: 9pt "Lucida Grande", Lucida, Verdana, sans-serif;
+	color: #000;
+
+}
+
+
+/* TABLE LIST */
+span.board {
+	background: transparent url('../images/airport-display-background-left.png') no-repeat top left;
+	display: block;
+	font-size: 15px;
+	height: 38px;
+	padding-left: 8px;
+	position: relative;
+}
+
+span.board span {
+    background: transparent url('../images/airport-display-background-right.png') no-repeat top right;
+    display: block;
+    font-weight: inherit;
+    height: 38px;
+    white-space: nowrap;
+}
+span.board span.strikethrough {
+	display: block; height: 38px;
+	background: url(../images/airport-display-strikethrough.png) 0px 17px repeat-x;
+	position: absolute; top: 0px; left: 1px;
+        width: 97%;
+        z-index: 1;
+}
+span.board strong {
+    position: relative;
+    top: 10px;
+    padding-right: 8px;
+}
+td {
+    border: none !important;
+    padding: 0px !important;
+}
+/* END LIST STYLE */
+
+
+
+
+/* COLORS */
+.red {
+	color: #ff4040;
+	color: rgba(255, 88, 88, 1.0);
+}
+
+.green {
+	color: #c7ffab;
+	color: rgba(199, 255, 171, 1.0);
+}
+
+.blue {
+	color: #cce5ff;
+	color: rgba(204, 229, 255, 1.0);
+}
+
+.yellow {
+	color: #ffefa1;
+}
+
+.red.glow {
+	color: rgba(255, 88, 88, 1.0);
+	text-shadow: 0px -1px 0px #000,
+						 0px 0px 5px rgba(255, 88, 88, 0.8);
+}
+
+.green.glow {
+	text-shadow: 0px -1px 0px #000, 
+						 0px 0px 5px rgba(199, 255, 171, 0.8);
+	-webkit-animation-name: greenPulse;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+}
+
+.blue.glow {
+	text-shadow: 0px -1px 0px #000, 
+						 0px 0px 5px rgba(204, 229, 225, 0.8);
+	-webkit-animation-name: bluePulse;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+}
+
+/* PULSE ANIMATION */
+
+@-webkit-keyframes redPulse {
+	from {
+		text-shadow: 0px -1px 0px #000, 0px 0px 5px rgba(255, 88, 88, 0.2);
+	}
+	50% {
+		color: rgba(255, 100, 100, 1.0)
+		text-shadow: 0px -1px 0px #000, 0px 0px 5px rgba(255, 88, 88, 1.0);
+	}
+	to {
+		text-shadow: 0px -1px 0px #000, 0px 0px 5px rgba(255, 88, 88, 0.2);
+	}
+}
+@-webkit-keyframes greenPulse {
+	from {
+		text-shadow: 0px -1px 0px #000, 0px 0px 5px rgba(199, 255, 171, 0.2);
+	}
+	50% {
+		color: rgba(228, 255, 210, 1.0)
+		text-shadow: 0px -1px 0px #000, 0px 0px 5px rgba(199, 255, 171, 1.0);
+	}
+	to {
+		text-shadow: 0px -1px 0px #000, 0px 0px 5px rgba(199, 255, 171, 0.2);
+	}
+}
+@-webkit-keyframes bluePulse {
+	from {
+		text-shadow: 0px -1px 0px #000, 0px 0px 5px rgba(204, 229, 225, 0.3);
+	}
+	50% {
+		color: rgba(205, 235, 255, 1.0);
+		text-shadow: 0px -1px 0px #000, 0px 0px 5px rgba(204, 229, 225, 1.0);
+	}
+	to {
+		text-shadow: 0px -1px 0px #000, 0px 0px 5px rgba(204, 229, 225, 0.3);
+	}
+}
