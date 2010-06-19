@@ -1,7 +1,29 @@
-AEROTOUR Intranet
-====================
+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----
+           . _..::__:  ,-"-"._        |7       ,     _,.__
+   _.___ _ _<_>`!(._`.`-.    /         _._     `_ ,_/  '  '-._.---.-.__
+>.{     " " `-==,',._\{  \  / {)      / _ ">_,-' `                mt-2_
+  \_.:--.       `._ )`^-. "'       , [_/(                       __,/-'
+ '"'     \         "    _L        oD_,--'                )     /. (|
+          |           ,'          _)_.\\._<> 6              _,' /  '
+          `.         /           [_/_'` `"(                <'}  )
+           \\    .-. )           /   `-'"..' `:.#          _)  '
+    `        \  (  `(           /         `:\  > \  ,-^.  /' '
+              `._,   ""         |           \`'   \|   ?_)  {\
+                 `=.---.        `._._       ,'     "`  |' ,- '.
+                   |    `-._         |     /          `:`<_|h--._
+                   (        >        .     | ,          `=.__.`-'\
+                    `.     /         |     |{|              ,-.,\     .
+                     |   ,'           \   / `'            ,"     \
+                     |  /              |_'                |  __  /
+                     | |                                  '-'  `-'   \.
+                     |/                                         "    /
+                     \.                                             '
 
-This is an internal application for Aerotour CR.
+                      ,/            ______._.--._ _..---.---------._
+     ,-----"-..?----_/ )      __,-'"             "                  (
+-.._(                  `-----'                                       `-
+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----
+FlightPlans is an internal application for Aerotour CR.
 - Check pilot schedule
 - Utilize predetermited flight routes
 
@@ -9,12 +31,14 @@ Data is store in Json format and pulled using PHP/JS
 Flights stored in SQLite
 
 TODO: 
-- On changing value of Global Magnetic Variation should place that value in all Mag Var text fields.
+- On changing value of Global Magnetic Variation should place that value
+  in all Mag Var text fields.
 - By changing value of Wind Vel. will apply same value for text fields bellow.
 - Drift will be calculated by (   ).
 - Mag Hhg will be calculated by (   ).
 - G.S Knots will be calculated by (   ).
-- Time mins will be displayed in minutes and calculated by Formula: Time = Distance / Ground Speed .
+- Time mins will be displayed in minutes and calculated by Formula: 
+  Time = Distance / Ground Speed .
 
 - Total fields
 -- Total G.S. Knots  will be average GS from all GS text fields.
@@ -22,6 +46,14 @@ TODO:
 -- Total Time mins will be sum of all minutes from all time mins text fields.
 
 - Fuel Burn
--- Fuel burn will take the value from Fuel Burn 14/hour text field, add Taxi, Diversion, Reserve + Entroute(total mins from Totals) and calculate TOTAL fuel required by Formula: ( Total Time / 60 ) * Gallons Burn per hour = Gallons Required.
+-- Fuel burn will take the value from Fuel Burn 14/hour text field, add Taxi, 
+   Diversion, Reserve + Entroute(total mins from Totals) and calculate TOTAL 
+   fuel required by Formula: 
+   ( Total Time / 60 ) * Gallons Burn per hour = Gallons Required.
 
 - Proxy php script to get remote content from a site with post variables.
+
+ _  __ _  _ ___ _     _
+|_||_ |_)/ \ | / \| ||_)
+| ||__| \\_/ | \_/|_|| \
+       JQuery/CSS3/HTML4
